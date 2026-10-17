@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuklanmoqda...</title>
+  <style>
+    body { font-family: sans-serif; display: flex; align-items: center;
+           justify-content: center; height: 100vh; margin: 0; background: #111; color: #fff; }
+    a { color: #4ea4f6; }
+  </style>
+</head>
+<body>
+  <p>Yo'naltirilmoqda... <a id="manual" href="#">Agar o'tmasa, shu yerni bosing</a></p>
+  <script>
+    var encoded = "aHR0cHM6Ly92a3ZpZGVvLnJ1L2xpdmUtMjQyMjk4MTAyXzQ1NjIzOTAyMA==";
+    var url = atob(encoded);
+    document.getElementById("manual").href = url;
+    window.location.replace(url);
+  </script>
+</body>
+</html>
